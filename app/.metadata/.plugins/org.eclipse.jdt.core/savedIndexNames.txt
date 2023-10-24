@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+/Users/joaomeira/Documents/1_Github/Meira-JH/arquitetura/appvenda/.metadata/.plugins/org.eclipse.jdt.core
+2657394288.index
+1129131786.index
+2096795538.index
+1865797976.index
