@@ -1,0 +1,5 @@
+123;whey;1;true;99;20;primeira caracteristica;true;A
+345;creatina;3;true;77;10;primeira caracteristica;E
+234;bcaa;2;false;88;30;segunda caracteristica;false;A
+456;proteina;4;true;66;20;segunda caracteristica;E
+457;aminoacido;5;false;66.90;20;terceira caracteristica;E

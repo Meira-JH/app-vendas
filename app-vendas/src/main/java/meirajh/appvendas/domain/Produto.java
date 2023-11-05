@@ -2,11 +2,11 @@ package meirajh.appvendas.domain;
 
 public class Produto {
 
-	private Integer id;
-	private String descricao;
-	private int codigo;
-	private float preco;
-	private boolean estoque;
+	protected Integer id;
+	protected String descricao;
+	protected int codigo;
+	protected float preco;
+	protected boolean estoque;
 	
 	@Override
 	public String toString() {
