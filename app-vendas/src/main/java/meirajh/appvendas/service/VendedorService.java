@@ -14,7 +14,7 @@ public class VendedorService {
 	private Map<String, Vendedor> mapaVendedor = new HashMap<String, Vendedor>();
 
 	public void incluir(Vendedor vendedor) {
-		mapaVendedor.put(vendedor.getCNPJ(), vendedor);
+		mapaVendedor.put(vendedor.getCPF(), vendedor);
 	}
 	
 	public Collection<Vendedor> obterLista(){	

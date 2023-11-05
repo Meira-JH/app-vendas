@@ -37,7 +37,7 @@ public class VendedorLoader implements ApplicationRunner {
 			Vendedor vendedor = new Vendedor();
 			
 			vendedor.setNome(campos[0]);
-			vendedor.setCNPJ(campos[1]);
+			vendedor.setCPF(campos[1]);
 			vendedor.setEmail(campos[2]);
 			
 			vendedorService.incluir(vendedor);
