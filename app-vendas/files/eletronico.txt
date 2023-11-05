@@ -1,0 +1,2 @@
+789;misturador eletronico;true;33;10;primeira marca
+890;smartwatch;true;22;20;segunda marca
