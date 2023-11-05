@@ -9,21 +9,21 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import meirajh.appvendas.domain.Vendedor;
-import meirajh.appvendas.service.VendedorService;
+import meirajh.appvendas.domain.Produto;
+import meirajh.appvendas.service.ProdutoService;
 
-@Order(1)
+@Order(2)
 @Component
 
-public class VendedorLoader implements ApplicationRunner {
+public class ProdutoLoader implements ApplicationRunner {
 	
 	@Autowired
-	protected VendedorService vendedorService;
+	private ProdutoService produtoService;
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		
-		FileReader file = new FileReader("files/vendedor.txt");		
+		FileReader file = new FileReader("files/produto.txt");		
 		BufferedReader leitura = new BufferedReader(file);
 		
 		String linha = leitura.readLine();
@@ -34,19 +34,17 @@ public class VendedorLoader implements ApplicationRunner {
 			
 			campos = linha.split(";");
 			
-			Vendedor vendedor = new Vendedor();
-			
-			vendedor.setNome(campos[0]);
-			vendedor.setCNPJ(campos[1]);
-			vendedor.setEmail(campos[2]);
-			
-			vendedorService.incluir(vendedor);
+			switch (campos[6]) {
+
+			default:
+				break;
+			}
 									
 			linha = leitura.readLine();
 		}
 
-		for(Vendedor vendedor: vendedorService.obterLista()) {
-			System.out.println("[Vendedor] " + vendedor);			
+		for(Produto produto: produtoService.obterLista()) {
+			System.out.println("[Produto] " + produto);			
 		}
 		
 		leitura.close();
